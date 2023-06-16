@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "autor" content="https://github.com/luizadomato">
+    <title>contact</title>
+    <link rel="shortcut icon" href="https://64.media.tumblr.com/a66c7e24f1bc0b1d978aa5c9260eaa05/789b93eaf531a6a0-86/s500x750/06fba445c9d60b0f9573aa80a2b36b770417e86a.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #ffedbd;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    .button img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+    }
+
+    .button:hover {
+      transform: scale(1.2);
+    }
+
+    h3 {
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 32px;
+      color: pink
+    }
+</style>
+</head>
+<body>
+    <div class="button">
+        <a href="https://open.spotify.com/user/96gjoojhzx0fb2bt5gqesqguy?si=cd35192803a84212" target="_blank">
+            <img src="https://64.media.tumblr.com/f4ae214bf17e79ba327426875bc2ed5a/9ccdc1ba56e96030-34/s1280x1920/c638e5879af4085fc59569460c58db56b6c330d8.jpg" alt="Spotify">
+        </a>
+        <h3>Spotify</h3>
+    </div>
+
+    <div class="button">
+        <a href="https://github.com/luizadomato" target="_blank">
+            <img src="https://i.pinimg.com/564x/da/00/38/da0038b0ec424cb219e13e4d42d2c426.jpg" alt="GitHub">
+        </a>
+        <h3>GitHub</h3>
+    </div>
+  
+    <div class="button">
+        <a href="https://instagram.com/luizatopia" target="_blank">
+            <img src="https://i.pinimg.com/564x/93/25/dc/9325dce357355569977ec6a70fc7d0fa.jpg" alt="Instagram">
+        </a>
+        <h3>Instagram</h3>
+    </div>
+
+    <div class="button">
+      <a href="https://www.skoob.com.br/usuario/8178898" target="_blank">
+          <img src="https://i.pinimg.com/564x/12/10/c4/1210c479f08a02141b97ee0638108735.jpg" alt="Skoob">
+      </a>
+      <h3>Skoob</h3>
+    </div>
+
+    <div class="button">
+      <a href="https://letterboxd.com/sradasdistopias/" target="_blank">
+          <img src="https://i.pinimg.com/564x/51/f9/41/51f941a778785544562d79f203797133.jpg" alt="Letterboxd">
+      </a>
+      <h3>Letterboxd</h3>
+    </div>
+    
+  <script>
+    const buttons = document.querySelectorAll('.button');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.add('clicked');
+        setTimeout(() => {
+          button.classList.remove('clicked');
+        }, 300);
+      });
+    });
+  </script>
+</body>
+</html>
